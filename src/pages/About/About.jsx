@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import '../../App.css'
 export default function About() {
   return (
     <>
@@ -45,22 +45,22 @@ export default function About() {
           </span>
           <span className="info">
             {" "}
-            <h4></h4>
+            <h4>""</h4>
             <p></p>
           </span>
           <span className="info">
             {" "}
-            <h4></h4>
+            <h4>""</h4>
             <p></p>
           </span>
           <span className="info">
             {" "}
-            <h4></h4>
+            <h4>""</h4>
             <p></p>
           </span>
           <span className="info">
             {" "}
-            <h4></h4>
+            <h4>""</h4>
             <p></p>
           </span>
         </div>
