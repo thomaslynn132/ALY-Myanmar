@@ -1,5 +1,5 @@
 import React from "react";
-import '../../App.css'
+import "../../App.css";
 export default function About() {
   return (
     <>
@@ -34,37 +34,18 @@ export default function About() {
             <h4>Date Of Last Annual Return</h4>
             <p>24/09/2020</p>
           </span>
-          <span className="info">
-            <h4>Principal Activity</h4>
-            <li>
-              <ul>41 - Construction of Buildings</ul>
-              <ul>08 - Other mining and quarraying</ul>
-              <ul>42 - Civil Engineering</ul>
-              <ul>Import - Export Trading</ul>
-            </li>
-          </span>
-          <span className="info">
-            {" "}
-            <h4>""</h4>
-            <p></p>
-          </span>
-          <span className="info">
-            {" "}
-            <h4>""</h4>
-            <p></p>
-          </span>
-          <span className="info">
-            {" "}
-            <h4>""</h4>
-            <p></p>
-          </span>
-          <span className="info">
-            {" "}
-            <h4>""</h4>
-            <p></p>
-          </span>
         </div>
       </div>
+
+      <span className="infoLi">
+        <h4>Principal Activity</h4>
+        <li>
+          <ul>41 - Construction of Buildings</ul>
+          <ul>08 - Other mining and quarraying</ul>
+          <ul>42 - Civil Engineering</ul>
+          <ul>Import - Export Trading</ul>
+        </li>
+      </span>
     </>
   );
 }

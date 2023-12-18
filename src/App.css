@@ -1,76 +1,100 @@
 body {
   align-items: center;
   text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.active {
-  color: red; /* Change the color to your preferred active link style */
-  font-weight: bold;
-}
-
-/* Change link color on hover */
-
-/* Styles for Container */
-.container {
-  width: 90%; /* Set container width */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 30px; /* Add padding inside the container */
-  background-color: #f0f0f0; /* Background color */
-}
-
-.subContainer {
-  height: fit-content;
-  width: 100%;
-  position: relative;
-  display: flex;
-}
-
-.info {
-  width: 200px;
-  height: 300px;
-  display: block;
-  position: relative;
-  border: 3px;
-  border-style: groove;
-}
-
-/* Responsive design for phones */
 @media (max-width: 767px) {
   .NavBar {
-    padding: 10px; /* Adjust padding for smaller screens */
+    padding: 10px;
+    /* Adjust padding for smaller screens */
   }
 
-  .NavBar a {
-    margin: 0 10px; /* Adjust spacing between links for smaller screens */
+  .navItems {
+    margin-right: "10px";
+    margin-left: auto;
+    position: "absolute";
+    display: flex;
+    width: 90%;
   }
 
-  .Container {
-    width: 100%; /* Set container width to full width for phones */
+  .container {
+    position: relative;
+    width: 95%; /* Center the container horizontally */
+    padding: 10px; /* Add padding inside the container */
+    background-color: #f0f0f0; /* Background color */
+  }
+
+  .subContainer {
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: inline;
+    padding: 10px;
+    align-items: center;
+  }
+  .info {
+    width: 200px; /* Adjust the width as needed */
+    height: 100px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    border: 3px;
+    box-sizing: content-box;
+    border-style: double;
+  }
+  .infoLi {
+    width: 400px;
+    height: 300px;
   }
 }
 
 /* Responsive design for tablets */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .Container {
-    width: 90%; /* Set container width to 90% for tablets */
+@media (min-width: 768px) {
+  .container {
+    position: relative;
+    width: 90%; /* /* Center the container horizontally */
+    padding: 30px; /* Add padding inside the container */
+    background-color: #f0f0f0; /* Background color */
   }
-}
 
-/* Responsive design for desktops */
-@media (min-width: 1024px) {
-  /* Add any additional desktop-specific styles here */
+  .subContainer {
+    position: static;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
   .navItems {
     margin-right: "10px";
-    position: "relative";
-    display: contents;
+    margin-left: auto;
+    position: static;
+    display: inline-block;
+    padding: 15px;
+  }
+  .info {
+    width: 250px; /* Adjust the width as needed */
+    height: 100px;
+    text-align: center;
+    display: inline-block;
+    align-self: auto;
+    border: 3px;
+    margin: 5px;
+    border-style: double;
+  }
+  .infoLi {
+    width: 400px;
+    height: 300px;
   }
 }
 
 .footer {
   background-color: aquamarine;
   width: 100%;
-  height: 200px;
+  text-align: left;
+  height: 150px;
   padding: 25px;
-  margin-bottom: 20px;
-  margin-top: auto;
+  margin-bottom: 0px;
+  margin: auto;
 }

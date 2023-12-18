@@ -6,7 +6,16 @@ export default function Footer() {
     <footer>
       <div className="footer">
         <p>
-          &copy; {currentYear} All rights reserved. ALY Myanmar <br />
+          &copy; {currentYear} All rights reserved. ALY Myanmar Contact us via:{" "}
+          <br />
+        </p>
+        <a href="https://www.facebook.com/profile.php?id=100063721672766&mibextid=ZbWKwL">
+          <img src="../Assets/Facebook.png" alt="Facebook Logo"></img>
+          <label>Facebook</label>
+        </a>
+        <h3>Address:</h3>
+        <p>
+          Byuhar Road, Aung Si Lar Village, Leiway Township, Naypyitaw, Myanmar{" "}
         </p>
       </div>
     </footer>
