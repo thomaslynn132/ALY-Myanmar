@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "../App.css";
 import Logo from "../assets/Logo.png";
 
-const NavLinkComponent = () => {
+const Navbar = () => {
   const navLinkStyles = ({ isActive }) => {
     return {
       fontWeight: isActive ? "bold" : "small",
@@ -66,4 +66,4 @@ const NavLinkComponent = () => {
   );
 };
 
-export default NavLinkComponent;
+export default Navbar;
