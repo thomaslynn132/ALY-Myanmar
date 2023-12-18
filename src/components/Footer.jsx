@@ -6,11 +6,11 @@ export default function Footer() {
     <footer>
       <div className="footer">
         <p>
-          &copy; {currentYear} All rights reserved. ALY Myanmar Contact us via:{" "}
-          <br />
+          &copy; {currentYear} All rights reserved. ALY Myanmar <br /> <br />
+          Contact us via: <br />
         </p>
         <a href="https://www.facebook.com/profile.php?id=100063721672766&mibextid=ZbWKwL">
-          <img src="../Assets/Facebook.png" alt="Facebook Logo"></img>
+          <img src="./assets/Facebook.png" alt="Facebook Logo"></img>
           <label>Facebook</label>
         </a>
         <h3>Address:</h3>

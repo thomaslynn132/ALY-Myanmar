@@ -35,17 +35,18 @@ export default function About() {
             <p>24/09/2020</p>
           </span>
         </div>
+        <br />
+        <span className="infoLi">
+          <h4>Principal Activity</h4>
+          <ul>
+            <li>41 - Construction of Buildings</li>
+            <li>08 - Other mining and quarraying</li>
+            <li>42 - Civil Engineering</li>
+            <li>Import - Export Trading</li>
+          </ul>
+        </span>
       </div>
-
-      <span className="infoLi">
-        <h4>Principal Activity</h4>
-        <li>
-          <ul>41 - Construction of Buildings</ul>
-          <ul>08 - Other mining and quarraying</ul>
-          <ul>42 - Civil Engineering</ul>
-          <ul>Import - Export Trading</ul>
-        </li>
-      </span>
+      <div className="container"></div>
     </>
   );
 }

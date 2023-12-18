@@ -16,18 +16,25 @@ export default function Home() {
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [fade, setFade] = useState("fade-in");
+
   useEffect(() => {
     const slideshowInterval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setFade("fade-out");
+
+      setTimeout(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setFade("fade-in");
+      }, 500); // Adjust the delay based on your transition duration
     }, 4000);
 
     return () => clearInterval(slideshowInterval);
-  }, [images.length, setCurrentImageIndex]);
+  }, [images.length, setCurrentImageIndex, setFade]);
 
   return (
     <div className="slideshow-container">
       <div
-        className="slide"
+        className={`slide ${fade}`}
         style={{
           backgroundImage: `url("${images[currentImageIndex]}")`,
           backgroundPosition: "center",
@@ -39,7 +46,7 @@ export default function Home() {
         <h1>Welcome to ALY Myanmar Website</h1>
         <p>
           Here we are about to help you with our available offers. <br /> You
-          can check about our available offerrs at
+          can check about our available offers at
           <a href="./Services"> Services</a> Page.
         </p>
       </div>

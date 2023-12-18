@@ -32,7 +32,7 @@ const NavLinkComponent = () => {
           flexDirection: "row",
           width: "100%",
           height: "100px",
-          backgroundColor: "blue",
+          backgroundColor: "skyblue",
         }}>
         <NavLink link="./" to="/" exact>
           <img
