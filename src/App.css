@@ -6,6 +6,20 @@ body {
   background-size: 1%;
 }
 
+.officer {
+  border: 1px solid;
+  height: 150px;
+  width: 300px;
+  padding: 10px;
+  margin: 15px;
+  background-color: rgb(153, 153, 153);
+  opacity: 05;
+  position: relative;
+  display: inline-block;
+  box-shadow: 3px 3px 1px 1px;
+  text-align: left;
+}
+
 @media (max-width: 767px) {
   .NavBar {
     padding: 10px;
@@ -40,6 +54,7 @@ body {
     padding: 5px;
     display: inline-block;
     border: 3px;
+    opacity: 0.63;
     box-sizing: content-box;
     border-style: double;
   }
@@ -49,6 +64,7 @@ body {
     text-align: center;
     margin: 5px;
     padding: 5px;
+    opacity: 0.63;
     display: inline-block;
     border: 3px;
     box-sizing: content-box;
@@ -84,6 +100,7 @@ body {
     align-self: auto;
     border: 3px;
     margin: 5px;
+    opacity: 0.63;
     border-style: double;
   }
   .infoLi {
@@ -94,8 +111,19 @@ body {
     padding: 5px;
     display: inline-block;
     border: 3px;
+    opacity: 0.63;
     box-sizing: content-box;
     border-style: double;
+  }
+
+  .officers {
+    margin: 5px;
+    padding: 10px;
+
+    position: static;
+    display: block;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -105,6 +133,6 @@ body {
   text-align: left;
   height: auto;
   padding: 25px;
+  margin-top: auto;
   margin-bottom: 0px;
-  margin: auto;
 }

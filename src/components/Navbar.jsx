@@ -22,6 +22,14 @@ const Navbar = () => {
     };
   };
 
+  const navItems = [
+    { label: "Home", to: "/", exact: true },
+    { label: "About", to: "/About", exact: true },
+    { label: "Contact", to: "/Contact", exact: true },
+    { label: "Services", to: "/Services", exact: true },
+    { label: "History", to: "/History", exact: true },
+  ];
+
   return (
     <>
       <nav
@@ -45,21 +53,15 @@ const Navbar = () => {
           </label>
         </NavLink>
         <div className="navItems">
-          <NavLink style={navLinkStyles} link="./" to="/" exact>
-            Home
-          </NavLink>
-          <NavLink style={navLinkStyles} link="./About" to="/About" exact>
-            About
-          </NavLink>
-          <NavLink style={navLinkStyles} link="./Contact" to="/Contact" exact>
-            Contact
-          </NavLink>
-          <NavLink style={navLinkStyles} link="./Services" to="/Services" exact>
-            Services
-          </NavLink>
-          <NavLink style={navLinkStyles} link="./History" to="/History" exact>
-            History
-          </NavLink>
+          {navItems.map((item, index) => (
+            <NavLink
+              key={index}
+              style={navLinkStyles}
+              to={item.to}
+              exact={item.exact}>
+              {item.label}
+            </NavLink>
+          ))}
         </div>
       </nav>
     </>

@@ -1,12 +1,13 @@
 import React from "react";
 import { Router } from "./router";
-import Error404 from "./pages/ErrorPage/Error";
+import { Footer, Navbar } from "./components";
 
 const App = () => {
   return (
     <div>
+      <Navbar />
       <Router />
-      <Error404 />
+      <Footer />
     </div>
   );
 };

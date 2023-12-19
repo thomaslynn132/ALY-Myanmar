@@ -34,7 +34,7 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="slideshow-container">
         <div
           className={`slide ${fade}`}
@@ -54,7 +54,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
