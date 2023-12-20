@@ -93,27 +93,58 @@ export default function About() {
           </ul>
         </span>
       </div>
-      <div className="container">
-        <h2>Officers</h2>
-        <div className="officers">
-          {officers.map((officer) => (
-            <div className="officer" key={officers.name}>
-              <p>
-                <b>Name : {officer.name}</b> <br />
-                Position : {officer.position} <br />
-                Gender : {officer.gender} <br />
-                Date of Appointment : {officer.dateOfAppointment}
-                <br />
-                Date of Birth : {officer.dateOfBirth}
-                <br />
-                Nationality : {officer.nationality}
-                <br />
-                NRC Number : {officer.nRC}
-                <br />
-              </p>
-            </div>
-          ))}
-        </div>
+      <h2>Officers</h2>
+      <div className="officers">
+        {officers.map((officer) => (
+          <div className="officer" key={officers.name}>
+            <p>
+              <b>Name : {officer.name}</b> <br />
+              Position : {officer.position} <br />
+              Gender : {officer.gender} <br />
+              Date of Appointment : {officer.dateOfAppointment}
+              <br />
+              Date of Birth : {officer.dateOfBirth}
+              <br />
+              Nationality : {officer.nationality}
+              <br />
+              NRC Number : {officer.nRC}
+              <br />
+            </p>
+          </div>
+        ))}
+      </div>
+      <h2>Share Capital Structure</h2>
+      <div className="Share">
+        <p>
+          Total Shares Issued By The Company: <br />
+          300 <br />
+          Total Amount Paid: <br />
+          30,000,000.00 MMK <br />
+          Total Amount Unpaid: 0.00 <br />
+          Class : ORD <br />
+          Description: Ordinary
+        </p>
+      </div>
+      <h4>Members</h4>
+      <div className="shareMember">
+        Name: Hein Zin <br /> Date of Birth: 19/09/1986 <br />
+        Gender: Male <br /> Nationality: Myanmar <br />
+        Class : ORD <br />
+        Class Description: Ordinary <br />
+        NRC: 9/LaWaNa(N)159210 <br />
+        Total Number of Shares: 250 <br />
+        Total Amount Paid: 25,000,000.00 <br />
+        Total Amount Unpaid: 0.00
+      </div>
+      <div className="shareMember">
+        Name: Khine Ngwe Lwin <br /> Date of Birth: 06/06/1988 <br />
+        Gender: Male <br /> Nationality: Myanmar <br />
+        Class : ORD <br />
+        Class Description: Ordinary <br />
+        NRC: 9/LaWaNa(N)164524 <br />
+        Total Number of Shares: 50 <br />
+        Total Amount Paid: 5,000,000.00 <br />
+        Total Amount Unpaid: 0.00
       </div>
     </>
   );
