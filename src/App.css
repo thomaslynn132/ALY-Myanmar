@@ -117,9 +117,12 @@ body {
   .navItems {
     margin-right: "10px";
     margin-left: auto;
-    position: static;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 15px;
+    column-gap: 10px;
   }
   .info {
     width: 250px; /* Adjust the width as needed */

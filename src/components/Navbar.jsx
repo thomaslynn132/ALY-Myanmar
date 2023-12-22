@@ -38,11 +38,12 @@ const Navbar = () => {
           position: "relative",
           display: "flex",
           flexDirection: "row",
+          justifyContent: 'center',
           width: "100%",
           height: "100px",
           backgroundColor: "skyblue",
         }}>
-        <NavLink link="./" to="/" exact>
+        <NavLink link="./" to="/" exact style={{ display: 'flex', flexDirection: "row", justifyContent: 'center', alignItems: 'center',}}>
           <img
             src={Logo}
             alt="Logo Of ALY Myanmar"

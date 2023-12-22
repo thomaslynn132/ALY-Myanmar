@@ -39,8 +39,8 @@ export default function HomepageText() {
           lineHeight: "20px",
         padding: "25px",
         margin: "25px",
-        display:"block"
-          textShadow: "revert",
+        display:"block",
+        textShadow: "revert",
         }}>
         Welcome to ALY Myanmar Website
       </div>
