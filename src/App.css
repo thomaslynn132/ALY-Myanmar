@@ -1,7 +1,7 @@
 body {
   align-items: center;
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Courier New', Courier, monospace";
   background-image: url("./assets/background.jpg");
   background-size: 7%;
   overflow-x: hidden;
@@ -159,11 +159,12 @@ body {
 }
 
 .footer {
-  background-color: aqua;
+  background-color: beige;
   width: 100%;
   text-align: left;
   height: auto;
   padding: 25px;
   margin-top: auto;
   margin-bottom: 0px;
+  opacity: 0.7;
 }
