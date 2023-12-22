@@ -11,8 +11,20 @@ import twtrcr2 from "./twtrcr2.jpg";
 import twtrcr3 from "./twtrcr3.jpg";
 import twtrcr4 from "./twtrcr4.jpg";
 import twtrcr5 from "./twtrcr5.jpg";
+import rock from "./rock.jpg";
+import rock1 from "./rock1.jpg";
+import rock2 from "./rock2.jpg";
+import rock3 from "./rock3.jpg";
+import rock4 from "./rock4.jpg";
+import rock5 from "./rock5.jpg";
 
 export {
+  rock,
+  rock1,
+  rock2,
+  rock3,
+  rock4,
+  rock5,
   twtrcr,
   twtrcr1,
   twtrcr2,
