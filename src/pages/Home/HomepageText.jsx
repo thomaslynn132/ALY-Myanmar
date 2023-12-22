@@ -20,17 +20,23 @@ export default function HomepageText() {
     });
   }, []);
 
-  return (
-    <div>
+  return (<div
+      style={{
+        width: "700px",
+        height: "auto",
+        padding: "25px",
+        margin: "25px",
+      }}>
       <div
         className="text"
         id="animatedText"
         style={{
           color: "cyan",
-          fontSize: "30px",
+          fontSize: "175%",
           fontWeight: "bold",
           textAlign: "center",
           lineHeight: "20px",
+          textShadow: "revert",
         }}>
         Welcome to ALY Myanmar Website
       </div>
