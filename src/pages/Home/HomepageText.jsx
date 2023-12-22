@@ -26,6 +26,7 @@ export default function HomepageText() {
         height: "auto",
         padding: "25px",
         margin: "25px",
+        display:"block"
       }}>
       <div
         className="text"
@@ -36,6 +37,9 @@ export default function HomepageText() {
           fontWeight: "bold",
           textAlign: "center",
           lineHeight: "20px",
+        padding: "25px",
+        margin: "25px",
+        display:"block"
           textShadow: "revert",
         }}>
         Welcome to ALY Myanmar Website
