@@ -1,5 +1,6 @@
 import React from "react";
 import "../../App.css";
+import Navbar from "../../components/Navbar";
 export default function About() {
   const officers = [
     {
@@ -51,6 +52,7 @@ export default function About() {
   return (
     <>
       <div className="container">
+        <Navbar />
         <h2 className="Title">Company Information</h2>
         <div className="subContainer">
           <span className="info">

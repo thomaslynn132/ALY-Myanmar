@@ -5,7 +5,6 @@ import { Footer, Navbar } from "./components";
 const App = () => {
   return (
     <div>
-      <Navbar />
       <Router />
       <Footer />
     </div>

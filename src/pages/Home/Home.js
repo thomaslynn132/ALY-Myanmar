@@ -6,7 +6,7 @@ import onSiteImage from "./onSite.jpg";
 import rocks3Image from "./rocks3.jpg";
 import surveyImage from "./survey.jpg";
 import HomepageText from "./HomepageText";
-
+import Navbar from "../../components/Navbar";
 export default function Home() {
   const images = [
     craneImage,
@@ -34,8 +34,8 @@ export default function Home() {
 
   return (
     <>
-      {/* <Navbar /> */}
       <div className="slideshow-container">
+        <Navbar />
         <div
           className={`slide ${fade}`}
           style={{

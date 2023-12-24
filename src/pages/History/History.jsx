@@ -14,6 +14,7 @@ import {
   ygnMdy6,
   ygnMdy7,
 } from "../../assets/imageExports";
+import Navbar from "../../components/Navbar";
 export default function History() {
   const contracts = [
     {
@@ -40,6 +41,7 @@ export default function History() {
   ];
   return (
     <>
+      <Navbar />
       {contracts.map((contract, index) => (
         <div
           className="contract"

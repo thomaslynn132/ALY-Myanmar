@@ -7,10 +7,12 @@ import {
   rock4,
   rock5,
 } from "../../assets/imageExports";
+import Navbar from "../../components/Navbar";
 export default function Services() {
   return (
     <>
       <div className="container">
+        <Navbar />
         <h3>
           Revolutionize Road Construction with Our Superior Paving Stones! 🚧
         </h3>
