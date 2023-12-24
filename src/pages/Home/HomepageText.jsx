@@ -20,34 +20,33 @@ export default function HomepageText() {
     });
   }, []);
 
-  return (<div
+  return (
+    <div
       style={{
         width: "700px",
         height: "auto",
         padding: "25px",
         margin: "25px",
-        display:"block"
+        display: "block",
       }}>
       <div
         className="text"
         id="animatedText"
         style={{
           color: "cyan",
-          fontSize: "175%",
+          fontSize: "20px",
           fontWeight: "bold",
           textAlign: "center",
           lineHeight: "20px",
-        padding: "25px",
-        margin: "25px",
-        display:"block",
-        textShadow: "revert",
+          display: "block",
+          textShadow: "revert",
         }}>
         Welcome to ALY Myanmar Website
       </div>
       <br />
       <br />
       <br />
-      <p>
+      <p style={{ fontSize: "15px" }}>
         Here we are about to help you with our available offers. <br /> You can
         check about our available offers at
         <a href="./Services"> Services</a> Page.
