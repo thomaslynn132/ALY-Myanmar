@@ -28,7 +28,6 @@ const Navbar = () => {
       fontWeight: isActive ? "bold" : "small",
       textDecoration: isActive ? "none" : "underline",
       border: isActive ? "none" : "double",
-      height: "20px",
       width: "65px",
       textAlign: "center",
       padding: "5px",
