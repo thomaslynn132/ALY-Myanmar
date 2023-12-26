@@ -138,6 +138,7 @@ body {
     height: auto;
     width: 100%;
     display: flex;
+    justify-content: space-between;
   }
   .lineBr {
     border: 3px solid;
@@ -248,6 +249,7 @@ body {
     height: auto;
     width: 100%;
     display: flex;
+    justify-content: space-between;
   }
   .lineBr {
     border: 3px solid;
