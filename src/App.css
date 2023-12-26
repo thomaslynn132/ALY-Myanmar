@@ -6,6 +6,8 @@ body {
   background-image: url("./assets/background.jpg");
   background-size: 7%;
   overflow-x: hidden;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
 }
 
 .officer {
@@ -16,7 +18,7 @@ body {
   width: 300px;
   padding: 10px;
   margin: 15px;
-  background-color: rgb(153, 153, 153);
+  background-color: rgba(104, 147, 157, 0.5);
   opacity: 0.73;
   position: relative;
   display: inline-block;
@@ -52,26 +54,28 @@ body {
 }
 @media (max-width: 767px) {
   .NavBar {
-    padding: 10px;
-    margin-top: 0px;
     display: flex;
     flex-direction: column;
-    background-color: bisque;
+    background-color: rgba(3, 148, 252, 0.5);
     position: relative;
-    /* Adjust padding for smaller screens */
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: auto;
+    z-index: 2;
   }
 
   .navItems {
-    padding-right: 60px;
+    padding: 10px;
+    margin-right: 20px;
     margin-left: auto;
-    margin-top: 5px;
+    margin-bottom: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     column-gap: 3px;
     width: 50px;
-    font-size: small;
+    font-size: 15px;
   }
 
   .container {
@@ -93,9 +97,8 @@ body {
     margin: 5px;
     padding: 5px;
     display: inline-block;
-    background-color: antiquewhite;
+    background-color: rgb(3, 232, 252, 0.2);
     border: 3px;
-    opacity: 0.63;
     box-sizing: content-box;
     border-style: double;
   }
@@ -105,12 +108,47 @@ body {
     text-align: center;
     margin: 5px;
     padding: 5px;
-    background-color: antiquewhite;
+    background-color: rgb(3, 232, 252, 0.2);
     opacity: 0.63;
     display: inline-block;
     border: 3px;
     box-sizing: content-box;
     border-style: double;
+  }
+  .footer {
+    background-color: rgba(3, 148, 252, 0.5);
+    width: 100%;
+    text-align: left;
+    height: auto;
+    padding: 25px;
+    margin-top: auto;
+    margin-bottom: 0px;
+  }
+
+  .footerCtn {
+    align-items: center;
+    padding: 5px;
+    height: auto;
+    width: 100%;
+    display: flex;
+  }
+  .lineBr {
+    border: 3px solid;
+    color: rgb(78, 118, 134);
+    height: auto;
+    margin: 5px 10px;
+  }
+  .socialMedia,
+  .address {
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid;
+    box-shadow: 5px 5px 0px 0px;
+    border-radius: 8%;
+    font-size: 12px;
   }
 }
 
@@ -121,28 +159,46 @@ body {
     width: 100%;
   }
 
+  .serviceContainer {
+    align-items: center;
+    margin: 20px 20%;
+    font-size: 13px;
+  }
+  .NavBar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(3, 148, 252, 0.7);
+    position: relative;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: auto;
+    z-index: 2;
+  }
+  .desktopMenu {
+    margin-right: 25;
+    margin-left: auto;
+  }
+
   .subContainer {
     position: static;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
   .navItems {
-    margin-right: "10px";
+    margin-right: 75px;
     margin-left: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 15px;
-    column-gap: 10px;
   }
   .info {
     width: 250px; /* Adjust the width as needed */
     height: 100px;
     text-align: center;
     display: inline-block;
-    background-color: antiquewhite;
+    background-color: rgb(3, 232, 252, 0.2);
     align-self: auto;
     border: 3px;
     margin: 5px;
@@ -157,7 +213,7 @@ body {
     padding: 5px;
     display: inline-block;
     border: 3px;
-    background-color: antiquewhite;
+    background-color: rgb(3, 232, 252, 0.2);
     opacity: 0.63;
     box-sizing: content-box;
     border-style: double;
@@ -166,21 +222,41 @@ body {
   .officers {
     margin: 5px;
     padding: 10px;
-
     position: static;
     display: block;
     justify-content: center;
     align-items: center;
   }
-}
-
-.footer {
-  background-color: beige;
-  width: 100%;
-  text-align: left;
-  height: auto;
-  padding: 25px;
-  margin-top: auto;
-  margin-bottom: 0px;
-  opacity: 0.7;
+  .footer {
+    background-color: rgba(3, 148, 252, 0.7);
+    width: 100%;
+    text-align: left;
+    height: auto;
+    padding: 25px;
+    margin-top: auto;
+    margin-bottom: 0px;
+  }
+  .footerCtn {
+    padding: 5px;
+    height: auto;
+    width: 100%;
+    display: flex;
+  }
+  .lineBr {
+    border: 3px solid;
+    color: skyblue;
+    height: auto;
+    margin: 3px 30px;
+  }
+  .socialMedia,
+  .address {
+    height: auto;
+    width: 40%;
+    padding: 15px;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid;
+    box-shadow: 5px 5px 0px 0px;
+    border-radius: 3%;
+  }
 }

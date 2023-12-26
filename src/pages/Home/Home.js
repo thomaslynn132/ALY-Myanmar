@@ -1,20 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./HomePage.css";
-import craneImage from "./crane.jpeg";
-import rocksImage from "./rocks.jpg";
-import onSiteImage from "./onSite.jpg";
-import rocks3Image from "./rocks3.jpg";
-import surveyImage from "./survey.jpg";
+
 import HomepageText from "./HomepageText";
 import Navbar from "../../components/Navbar";
+import {
+  homepage,
+  homepage1,
+  homepage3,
+  homepage4,
+  homepage5,
+} from "../../assets/imageExports";
 export default function Home() {
-  const images = [
-    craneImage,
-    rocksImage,
-    onSiteImage,
-    rocks3Image,
-    surveyImage,
-  ];
+  const images = [homepage, homepage1, homepage3, homepage4, homepage5];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [fade, setFade] = useState("fade-in");
@@ -34,8 +31,8 @@ export default function Home() {
 
   return (
     <>
+      <Navbar />
       <div className="slideshow-container">
-        <Navbar />
         <div
           className={`slide ${fade}`}
           style={{
@@ -43,13 +40,13 @@ export default function Home() {
             backgroundPosition: "center",
             color: "white",
             fontWeight: "bold",
-            padding: "5px",
             alignItems: "center",
+            overflowX: "none",
+            justify: "center",
           }}>
           <HomepageText />
         </div>
       </div>
-      {/* <Footer /> */}
     </>
   );
 }

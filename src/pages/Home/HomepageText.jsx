@@ -23,23 +23,17 @@ export default function HomepageText() {
   return (
     <div
       style={{
-        width: "700px",
-        height: "auto",
         padding: "25px",
-        margin: "25px",
-        display: "block",
       }}>
       <div
         className="text"
         id="animatedText"
         style={{
           color: "cyan",
-          fontSize: "20px",
+          fontSize: "22px",
           fontWeight: "bold",
           textAlign: "center",
-          lineHeight: "20px",
-          display: "block",
-          textShadow: "revert",
+          marginTop: "150px",
         }}>
         Welcome to ALY Myanmar Website
       </div>

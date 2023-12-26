@@ -51,8 +51,8 @@ export default function About() {
   ];
   return (
     <>
+      <Navbar />
       <div className="container">
-        <Navbar />
         <h2 className="Title">Company Information</h2>
         <div className="subContainer">
           <span className="info">
@@ -72,7 +72,7 @@ export default function About() {
             <p>Private Company Limited by Shares</p>
           </span>
           <span className="info">
-            <h4>Forein Company</h4>
+            <h4>Foreign Company</h4>
             <p>No</p>
           </span>
           <span className="info">

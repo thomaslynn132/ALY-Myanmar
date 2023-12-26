@@ -17,8 +17,19 @@ import rock2 from "./rock2.jpg";
 import rock3 from "./rock3.jpg";
 import rock4 from "./rock4.jpg";
 import rock5 from "./rock5.jpg";
+import homepage from "./homepage.jpeg";
+import homepage1 from "./homepage1.jpg";
+import homepage3 from "./homepage3.jpg";
+import homepage4 from "./homepage4.jpg";
+import homepage5 from "./homepage5.jpg";
+import Facebook from "./Facebook.png";
 
 export {
+  homepage1,
+  homepage,
+  homepage3,
+  homepage4,
+  homepage5,
   rock,
   rock1,
   rock2,
@@ -38,4 +49,5 @@ export {
   ygnMdy5,
   ygnMdy6,
   ygnMdy7,
+  Facebook,
 };

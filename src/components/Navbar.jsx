@@ -1,12 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import { FiMenu } from "react-icons/fi"; // Example icon from react-icons
+import { FiMenu } from "react-icons/fi";
 import "../App.css";
 import Logo from "../assets/Logo.png";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 767);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 767);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -36,11 +48,12 @@ const Navbar = () => {
       textAlign: "center",
       padding: "5px",
       marginLeft: "5px",
-      color: "black",
+      color: "cyan",
       fontSize: "15px",
       borderRadius: "8%",
       boxShadow: "3px 3px 0px 0px",
       display: "inline-block",
+      textShadow: "2px",
     };
     return {
       ...baseStyles,
@@ -68,10 +81,8 @@ const Navbar = () => {
           position: "relative",
           display: "flex",
           flexDirection: "row",
-          justifyContent: "center",
           width: "100%",
-          height: "85px",
-          backgroundColor: "skyblue",
+          height: "55px",
         }}>
         <NavLink
           to="/"
@@ -79,7 +90,7 @@ const Navbar = () => {
           style={{
             display: "flex",
             flexDirection: "row",
-            justifyContent: "center",
+            justifyContent: "left",
             alignItems: "center",
           }}>
           <img
@@ -92,31 +103,65 @@ const Navbar = () => {
             style={{
               fontSize: "30px",
               fontFamily: "fantasy",
+              color: "black",
             }}>
             ALY Myanmar
           </label>
         </NavLink>
-        <div className="navItems">
-          <div onClick={toggleMobileMenu}>
-            <FiMenu size={30} />
-          </div>
+
+        {isDesktop && (
           <div className="desktopMenu">
-            {isMobileMenuOpen && (
-              <div className="mobileMenu">
-                {navItems.map((item, index) => (
-                  <NavLink
-                    key={index}
-                    style={navLinkStyles}
-                    to={item.to}
-                    exact={item.exact}
-                    onClick={toggleMobileMenu}>
-                    {item.label}
-                  </NavLink>
-                ))}
-              </div>
-            )}
+            <div className="mobileMenu">
+              {navItems.map((item, index) => (
+                <NavLink
+                  key={index}
+                  style={navLinkStyles}
+                  to={item.to}
+                  exact={item.exact}
+                  onClick={toggleMobileMenu}>
+                  {item.label}
+                </NavLink>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
+
+        {!isDesktop && (
+          <>
+            <div className="navItems">
+              <div className="desktopMenu">
+                <div
+                  onClick={toggleMobileMenu}
+                  style={{ marginRight: "0px", marginLeft: "auto" }}>
+                  <FiMenu
+                    size={30}
+                    style={{
+                      color: "black",
+                      border: "3px solid",
+                      borderRadius: "20%",
+                    }}
+                  />
+                </div>
+                {isMobileMenuOpen && (
+                  <>
+                    <div className="mobileMenu">
+                      {navItems.map((item, index) => (
+                        <NavLink
+                          key={index}
+                          style={navLinkStyles}
+                          to={item.to}
+                          exact={item.exact}
+                          onClick={toggleMobileMenu}>
+                          {item.label}
+                        </NavLink>
+                      ))}
+                    </div>
+                  </>
+                )}
+              </div>
+            </div>
+          </>
+        )}
       </nav>
     </>
   );
