@@ -143,8 +143,6 @@ body {
   }
   .socialMedia,
   .address {
-    height: 150px;
-    width: 150px;
     padding: 10px;
     display: block;
     box-sizing: border-box;
@@ -269,8 +267,6 @@ body {
   }
   .socialMedia,
   .address {
-    height: auto;
-    width: 40%;
     padding: 15px;
     display: block;
     box-sizing: border-box;
