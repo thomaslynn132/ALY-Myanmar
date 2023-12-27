@@ -85,14 +85,12 @@ export default function About() {
           </span>
         </div>
         <br />
-        <span className="infoLi">
+        <span className="info">
           <h4>Principal Activity</h4>
-          <ul>
-            <li>41 - Construction of Buildings</li>
-            <li>08 - Other mining and quarraying</li>
-            <li>42 - Civil Engineering</li>
-            <li>Import - Export Trading</li>
-          </ul>
+          41 - Construction of Buildings
+          <br /> 08 - Other mining and quarraying
+          <br /> 42 - Civil Engineering
+          <br /> Import - Export Trading
         </span>
       </div>
       <h2>Officers</h2>

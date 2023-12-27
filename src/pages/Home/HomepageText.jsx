@@ -5,7 +5,6 @@ export default function HomepageText() {
     const textContainer = document.getElementById("animatedText");
     const text = textContainer.innerText;
     textContainer.innerHTML = ""; // Clear original text
-    // Split the text into words and wrap each word in a span
     const words = text.split("");
     for (const word of words) {
       const span = document.createElement("span");
@@ -13,7 +12,6 @@ export default function HomepageText() {
       textContainer.appendChild(span);
     }
 
-    // Trigger animation by adding class to each span with a delay
     const spans = textContainer.querySelectorAll("span");
     spans.forEach((span, index) => {
       span.style.animationDelay = `${index * 0.15}s`;

@@ -18,66 +18,90 @@ export default function Services() {
         </h2>
         <h5>
           Unleash the power of innovation on your road construction projects
-          <br /> with our premium paving stones, <br />
-          meticulously designed for durability, <br />
+          with our premium paving stones, meticulously designed for durability,
           safety, and aesthetic excellence. 🛣️✨
           <br />✨ Why Opt for Our Paving Stones in Road Construction?
         </h5>
-        <div
-          className="serviceContainer"
-          style={{
-            textAlign: "left",
-            alignItems: "center",
-          }}>
-          ✨🛡️ Durability & Strength: <br />
-          Construct roads that withstand the test of time! <br />
-          Our paving stones are engineered for exceptional strength, <br />
-          ensuring a robust foundation that endures heavy traffic and <br />
-          environmental challenges.
+        <div className="serviceContainer">
+          <div className="serviceDiv">
+            <div className="serviceText">
+              ✨🛡️ Durability & Strength: <br />
+              Construct roads that withstand the test of time! <br />
+              Our paving stones are engineered for exceptional strength,
+              ensuring a robust foundation that endures heavy traffic and
+              environmental challenges.
+            </div>
+            <div className="lineBr"></div>
+            <div className="serviceImage">
+              <img src={rock} alt="Rock" />
+            </div>
+          </div>
+          <div className="serviceDiv">
+            <div className="serviceText">
+              🚗 Traffic Efficiency: <br />
+              Enhance road safety and efficiency with our carefully crafted
+              paving stones. Choose from various sizes to create smooth
+              surfaces, promoting better vehicle traction and minimizing wear
+              and tear.
+            </div>
+            <div className="lineBr"></div>
+            <div className="serviceImg">
+              <img src={rock1} alt="Rock" />
+            </div>
+          </div>
+          <div className="serviceDiv">
+            <div className="serviceText">
+              🏞️ Aesthetics & Landscaping Integration: <br />
+              Elevate the visual appeal of your road projects! <br /> Our
+              diverse range of paving stones allows for creative landscaping
+              integration, <br /> turning roads into aesthetically pleasing and
+              functional corridors.
+            </div>
+            <div className="lineBr"></div>
+            <div className="serviceImg">
+              <img src={rock2} alt="Rock" />
+            </div>
+          </div>
+
+          <div className="serviceDiv">
+            <div className="serviceText">
+              {" "}
+              🌐 Custom Solutions: <br />
+              Tailor road designs to meet specific project requirements. <br />
+              Our collection offers a variety of sizes, <br />
+              enabling customization for different sections of the road, <br />
+              intersections, and pedestrian walkways.
+            </div>
+            <div className="lineBr"></div>
+            <div className="serviceImg">
+              <img src={rock3} alt="Rock" />
+            </div>
+          </div>
+          <div className="serviceDiv">
+            <div className="serviceText">
+              🔄 Quick Installation & Maintenance: <br />
+              Streamline construction timelines with our easy-to-install paving
+              stones. Additionally, their low-maintenance nature ensures that
+              your roads remain pristine and safe for the long haul.
+            </div>
+            <div className="lineBr"></div>
+            <div className="serviceImg">
+              <img src={rock4} alt="Rock" />
+            </div>
+          </div>
           <br />
-          <img src={rock} alt="Rock" width={300} />
-          <br /> <br />
-          🚗 Traffic Efficiency: <br />
-          Enhance road safety and efficiency with our carefully crafted paving
-          stones. <br />
-          Choose from various sizes to create smooth surfaces, <br />
-          promoting better vehicle traction and minimizing wear and tear.
-          <br />
-          <img src={rock1} alt="Rock" width={350} />
-          <br />
-          <br /> 🏞️ Aesthetics & Landscaping Integration: <br />
-          Elevate the visual appeal of your road projects! <br /> Our diverse
-          range of paving stones allows for creative landscaping integration,{" "}
-          <br /> turning roads into aesthetically pleasing and functional
-          corridors.
-          <br />
-          <img src={rock2} alt="Rock" width={350} />
-          <br />
-          <br /> 🌐 Custom Solutions: <br />
-          Tailor road designs to meet specific project requirements. <br />
-          Our collection offers a variety of sizes, <br />
-          enabling customization for different sections of the road, <br />
-          intersections, and pedestrian walkways.
-          <br />
-          <img src={rock3} alt="Rock" width={350} />
-          <br />
-          <br /> 🔄 Quick Installation & Maintenance: <br />
-          Streamline construction timelines with our easy-to-install paving
-          stones. <br />
-          Additionally, their low-maintenance nature ensures that your roads
-          remain pristine <br />
-          and safe for the long haul.
-          <br /> <img src={rock4} alt="Rock" width={350} />
-          <br />
-          <br />
-          🌍 Elevate Your Road Construction Game: <br />
-          Explore the possibilities at our showroom <br />
-          or connect with our expert team online. <br />
-          Discover how our paving stones can revolutionize your road
-          construction projects.
-          <br />
-          <img src={rock5} alt="Rock" width={350} />
-          <br /> <br />
+          <div className="serviceDiv">
+            <div className="serviceText">
+              🌍 Elevate Your Road Construction Game: Explore the possibilities
+              at our showroom or connect with our expert team online. Discover
+              how our paving stones can revolutionize your road construction
+              projects.
+            </div>
+            <div className="lineBr"></div>
+            <div className="serviceImg">
+              <img src={rock5} alt="Rock" />
+            </div>
+          </div>
           <h3>🚀 Choose Quality. Choose Innovation. Choose ALY Myanmar</h3>
         </div>
       </div>
