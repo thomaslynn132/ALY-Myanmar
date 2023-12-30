@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 const routes = [
   {
     component: <Home />,
+    errorComponent: <Error404 />,
     path: ROUTES.HOME,
   },
   {
