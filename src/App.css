@@ -66,13 +66,24 @@ body {
   text-align: left;
 }
 @media (max-width: 767px) {
+  .mobileMenu {
+    margin-top: 75px;
+    margin-right: 35px;
+    margin-left: auto;
+  }
+  .mobileNav {
+    margin: 5px;
+    box-sizing: border-box;
+  }
   .NavBar {
+    padding: 15px;
     display: flex;
     flex-direction: column;
     background-color: rgba(3, 148, 252, 0.5);
     position: sticky;
     align-items: center;
     font-weight: normal;
+    justify-content: baseline;
     margin-top: 0;
     margin-bottom: auto;
     z-index: 2;
@@ -83,11 +94,10 @@ body {
     height: auto;
   }
   .navItems {
-    margin-bottom: auto;
+    margin-right: 5px;
+    margin-left: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-shadow: 5px 5px 5px rgb(255, 255, 0);
     align-items: center;
     column-gap: 3px;
     width: 50px;
@@ -135,19 +145,11 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  .lineBr {
-    border: 3px solid;
-    color: rgb(78, 118, 134);
-    height: auto;
-    margin: 5px 10px;
-  }
   .socialMedia,
   .address {
     padding: 10px;
     display: block;
     box-sizing: border-box;
-    border: 2px solid;
-    box-shadow: 5px 5px 0px 0px;
     border-radius: 8%;
     font-size: 12px;
   }
@@ -173,6 +175,7 @@ body {
     font-size: 13px;
   }
   .serviceDiv {
+    justify-content: center;
     margin: 20px 45px;
     padding: 15px;
     position: relative;
@@ -187,9 +190,9 @@ body {
     align-items: center;
     margin: 15px;
     font-size: 25px;
-    justify-content: center;
     height: auto;
     width: 40%;
+    justify-content: center;
   }
 
   .serviceImg {
@@ -197,6 +200,9 @@ body {
     height: auto;
     margin: 20px;
     padding: 15px;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
   }
 
   .NavBar {
@@ -257,7 +263,7 @@ body {
     height: auto;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .lineBr {
     border: 3px solid;
@@ -270,8 +276,5 @@ body {
     padding: 15px;
     display: block;
     box-sizing: border-box;
-    border: 2px solid;
-    box-shadow: 5px 5px 0px 0px;
-    border-radius: 3%;
   }
 }

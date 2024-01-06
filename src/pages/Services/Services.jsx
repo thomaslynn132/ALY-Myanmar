@@ -16,12 +16,7 @@ export default function Services() {
         <h2>
           Revolutionize Road Construction with Our Superior Paving Stones! 🚧
         </h2>
-        <h5>
-          Unleash the power of innovation on your road construction projects
-          with our premium paving stones, meticulously designed for durability,
-          safety, and aesthetic excellence. 🛣️✨
-          <br />✨ Why Opt for Our Paving Stones in Road Construction?
-        </h5>
+        <h5>✨ Why Opt for Our Paving Stones in Road Construction?</h5>
         <div className="serviceContainer">
           <div className="serviceDiv">
             <div className="serviceText">
@@ -36,6 +31,7 @@ export default function Services() {
               <img src={rock} alt="Rock" />
             </div>
           </div>
+          <br />
           <div className="serviceDiv">
             <div className="serviceText">
               🚗 Traffic Efficiency: <br />
@@ -49,6 +45,7 @@ export default function Services() {
               <img src={rock1} alt="Rock" />
             </div>
           </div>
+          <br />
           <div className="serviceDiv">
             <div className="serviceText">
               🏞️ Aesthetics & Landscaping Integration: <br />
@@ -62,10 +59,9 @@ export default function Services() {
               <img src={rock2} alt="Rock" />
             </div>
           </div>
-
+          <br />
           <div className="serviceDiv">
             <div className="serviceText">
-              {" "}
               🌐 Custom Solutions: <br />
               Tailor road designs to meet specific project requirements. <br />
               Our collection offers a variety of sizes, <br />
@@ -77,6 +73,7 @@ export default function Services() {
               <img src={rock3} alt="Rock" />
             </div>
           </div>
+          <br />
           <div className="serviceDiv">
             <div className="serviceText">
               🔄 Quick Installation & Maintenance: <br />
@@ -102,7 +99,7 @@ export default function Services() {
               <img src={rock5} alt="Rock" />
             </div>
           </div>
-          <h3>🚀 Choose Quality. Choose Innovation. Choose ALY Myanmar</h3>
+          <h2>🚀 Choose Quality. Choose Innovation. Choose ALY Myanmar</h2>
         </div>
       </div>
     </>

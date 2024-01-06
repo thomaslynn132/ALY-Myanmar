@@ -24,47 +24,22 @@ const Navbar = () => {
   };
 
   const navLinkStyles = ({ isActive }) => {
-    const baseStyles = {
-      fontWeight: isActive ? "bold" : "small",
-      textDecoration: isActive ? "none" : "underline",
-      border: isActive ? "none" : "double",
-      color: isActive ? "red" : "black",
-      height: "30px",
-      width: "75px",
-      textAlign: "center",
-      padding: "5px",
-      marginLeft: "10px",
-      color: "black",
-      fontSize: "15px",
-      borderRadius: "8%",
-      boxShadow: "3px 3px 0px 0px",
-      display: "inline-block",
-    };
-    const mobileStyles = {
-      fontWeight: isActive ? "bold" : "small",
-      textDecoration: isActive ? "none" : "underline",
-      border: isActive ? "none" : "double",
-      color: isActive ? "red" : "black",
-      height: "30px",
-      width: "75px",
-      textAlign: "center",
-      padding: "5px",
-      marginLeft: "5px",
-      color: "cyan",
-      fontSize: "15px",
-      borderRadius: "8%",
-      boxShadow: "3px 3px 0px 0px",
-      display: "inline-block",
-      textShadow: "2px",
-    };
     return {
-      ...baseStyles,
-      "@media screen and (min-width: 767px)": {
-        ...baseStyles,
-      },
-      "@media screen and (max-width: 768px)": {
-        ...mobileStyles,
-      },
+      fontWeight: isActive ? "bold" : "normal",
+      textDecoration: isActive ? "none" : "underline",
+      border: "double",
+      color: isActive ? "darkblue" : "black",
+      height: "30px",
+      width: "85px",
+      textAlign: "center",
+      padding: "5px",
+      marginTop: "5px",
+      marginLeft: "5px",
+      fontSize: "15px",
+      borderRadius: "8%",
+      boxShadow: "3px 3px 0px 0px",
+      display: "inline-block",
+      backgroundColor: "lightblue",
     };
   };
 
@@ -148,14 +123,16 @@ const Navbar = () => {
                   <>
                     <div className="mobileMenu">
                       {navItems.map((item, index) => (
-                        <NavLink
-                          key={index}
-                          style={navLinkStyles}
-                          to={item.to}
-                          exact={item.exact}
-                          onClick={toggleMobileMenu}>
-                          {item.label}
-                        </NavLink>
+                        <div className="mobileNav">
+                          <NavLink
+                            key={index}
+                            style={navLinkStyles}
+                            to={item.to}
+                            exact={item.exact}
+                            onClick={toggleMobileMenu}>
+                            {item.label}
+                          </NavLink>
+                        </div>
                       ))}
                     </div>
                   </>
