@@ -17,7 +17,22 @@ export default function HomepageText() {
       span.style.animationDelay = `${index * 0.15}s`;
     });
   }, []);
+  useEffect(() => {
+    const textContainer = document.getElementById("animatedText");
+    const text = textContainer.innerText;
+    textContainer.innerHTML = ""; // Clear original text
+    const words = text.split("");
+    for (const word of words) {
+      const span = document.createElement("span");
+      span.textContent = word + " "; // Add space between words
+      textContainer.appendChild(span);
+    }
 
+    const spans = textContainer.querySelectorAll("span");
+    spans.forEach((span, index) => {
+      span.style.animationDelay = `${index * 0.15}s`;
+    });
+  }, []);
   return (
     <div
       style={{
