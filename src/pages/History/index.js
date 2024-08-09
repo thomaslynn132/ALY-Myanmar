@@ -45,7 +45,7 @@ export default function History() {
       {contracts.map((contract, index) => (
         <div
           className="contract"
-          key={contract.id}
+          key={index}
           style={{
             margin: "30px",
             padding: "25px",
@@ -61,6 +61,7 @@ export default function History() {
             Type of the Road: {contract.type} <br />
             Date Of Completion: {contract.completedDate}
             Name of the director: {contract.director} <br />
+            <br />
           </p>
           <div
             style={{

@@ -1,5 +1,4 @@
-import { Home, About, Services, History } from "../pages";
-import Error404 from "../pages/ErrorPage/Error";
+import { Error404, Home, About, Services, History } from "../pages";
 import { ROUTES } from "./routerConstants";
 import { Routes, Route } from "react-router-dom";
 
